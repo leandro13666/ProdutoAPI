@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProdutoAPI.Data;
 
@@ -11,9 +12,10 @@ using ProdutoAPI.Data;
 namespace ProdutoAPI.Migrations
 {
     [DbContext(typeof(ProdutoDBContext))]
-    partial class ProdutoDBContextModelSnapshot : ModelSnapshot
+    [Migration("20230930135734_VinculoProduto")]
+    partial class VinculoProduto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

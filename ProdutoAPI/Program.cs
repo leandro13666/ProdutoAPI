@@ -24,6 +24,7 @@ namespace ProdutoAPI
                 );
 
             builder.Services.AddScoped<IProdutoRepositorio, ProdutoRepositorio>();
+            builder.Services.AddScoped<IClienteRepositorio, ClienteRepositorio>();
 
             var app = builder.Build();
 

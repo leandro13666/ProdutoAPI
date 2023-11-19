@@ -13,6 +13,9 @@ namespace ProdutoAPI.Data.Map
             builder.Property(x => x.Descricao).IsRequired().HasMaxLength(255);
             builder.Property(x => x.Preco).IsRequired().HasMaxLength(255);  
             builder.Property(x => x.Status).IsRequired();
+            builder.Property(x => x.ProdutoId);
+
+            builder.HasOne(x => x.Pruduto);
         }
     }
 }

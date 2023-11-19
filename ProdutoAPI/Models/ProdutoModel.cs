@@ -13,7 +13,9 @@ namespace ProdutoAPI.Models
         public int Preco { get; set; }
 
         public StatusProduto Status { get; set; }   
+        public int? ProdutoId { get; set; }
 
+        public virtual ProdutoModel? Pruduto { get; set; }
 
     }
 }
